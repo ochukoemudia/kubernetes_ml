@@ -4,16 +4,35 @@
 
 This is a pre-trained, sklearn model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on the data source site. This project tests your ability to operationalize a Python flask app—in a provided file, app.py—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
 
+##What does this project do?
+
+Run a docker container
+
+Upload container into a public registry (hub.docker.com)
+
+Run the deployed application in a Kubernetes cluster
+
+Integrate with CircleCI for continuous integration
+
+
 ### Files Explaination
 
 Dockerfile - Contains commands used to create a docker image
+
 Makefile - Contains useful set of commands to setup environment, run tests and run lints
+
 app.py - Python flask app that returns predictions about housing prices when requested using API calls
+
 make_prediction.sh - Send API request to Flash app running and receives response
+
 run_docker.sh - Script to build and run docker image locally
+
 upload_docker.sh - Script to tag and upload docker image to docker hub
+
 run_kubernetes.sh - Script to setup and run app on kubernetes
+
 .circleci/config.yml: CircleCI configuration file for running the tests
+
 templates/index.html: Frontend of this project where you can send input and receive a prediction
 
 ## Requirements
