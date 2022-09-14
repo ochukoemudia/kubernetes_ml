@@ -24,16 +24,22 @@ Python 3.7
 Step 1: Fork and clone the repository
 
 Step 2: Install dependencies
+
 •	Set up the environment by running make setup. This will create a virtual environment in your home directory called .devops
+
 •	Install dependencies by running make install
   
 Step 3: Run Docker container
+
 •	Run the application on docker by calling ./run_docker.sh
 
 Step 4: Upload to Docker Hub
+
 •	In the ./upload_docker.sh file, edit the dockerpath (line 8) and change the docker username
+
 •	To upload to docker hub, run ./upload_docker.sh
 
 Step 5: Kubernetes deployment
+
 •	To deploy to kubernetes, run ./run_kubernetes.sh
 
